@@ -1,0 +1,27 @@
+.grid_container {
+  display: grid;
+  /*grid-template-areas: "header header" "side main" "footer footer";*/ /*1er essai : diviser plus part through ligne*/
+  grid-template-areas: "header side main footer"; /*2éme essai : diviser plus part for same colomun */
+  /*grid-template-columns: 2fr 1fr;*/ /*widht*/ /*1er essai*/
+  grid-template-columns: 2fr 1fr 3fr 2fr; /*2éme essai*/
+  /*grid-template-rows: 200px 90vh 100px; /*height */ /*1er essai*/
+  /*grid-template-rows: 200px 90vh 100px 100px; /*2éme essai*/
+  /*grid-template-rows: 1fr 2fr;*/
+  gap: 10px;
+}
+.item1 {
+  background-color: aqua;
+  grid-area: header;
+}
+.item2 {
+  background-color: rgb(255, 0, 0);
+  grid-area: side;
+}
+.item3 {
+  background-color: rgb(255, 0, 200);
+  grid-area: main;
+}
+.item4 {
+  background-color: aqua;
+  grid-area: footer;
+}

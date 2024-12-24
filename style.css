@@ -1,0 +1,187 @@
+/*h1 { //selecteur
+  color: black;
+}
+.title { // tag
+  color: red;
+}
+*/
+/* Reset de base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  */
+/* Styles du body */
+body {
+  /*font-family: Arial, sans-serif;*/
+  background-color: #f8f8f8;
+  color: black;
+  margin: 0px;
+}
+
+/* Header */
+/*tag hml : header , css : header*/
+
+header {
+  background-color: black;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+/*Class=navbar, css=.navebar*/
+.navbar {
+  display: flex;
+  justify-content: space-between; /*espace entre title our store à l'autre elemnt*/
+  align-items: center;
+  max-width: 12000px;
+  margin: 0 auto;
+  padding: 5px 5px;
+}
+
+.navbar h1 {
+  font-size: 25px;
+  padding: 5px;
+  padding-left: 50px;
+  margin: 5px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding-right: 50px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: underline;
+}
+
+/*Position : relative , absolut*/
+/*#Home {
+  position: absolute;
+  top: +20px;
+}*/
+
+.navbar a:hover {
+  text-decoration: overline;
+  color: gray;
+}
+
+.navbar a:active {
+  /*decoration text*/
+  text-decoration: overline;
+  color: beige;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Grille des produits */
+.product-grid {
+  /*display: grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));*/
+  /*gap: 15px;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 1cm;*/
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px;
+  row-gap: 15px;
+  column-gap: 15px;
+  /*background-color: white;*/
+  padding: 50px 10px 10px 10px;
+  max-width: 1200px;
+  margin: 50px;
+}
+
+/*2éme gris */
+.product-grid-2 {
+  /*display: grid;
+    /*grid-template-columns: repeat(auto-fit : chaque element, minmax(200px, 1fr) : combient de fraction); || repat || 1fr : farction || chaque element combient de fraction */
+  /*gap: 15px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 1cm;*/
+  display: grid;
+  grid-template-columns: auto auto auto auto; /*tous les element dans gris verticla*/
+  grid-gap: 15px;
+  /*row-gap: 15px;*/
+  /*column-gap: 15px;*/
+  /*background-color: white;*/
+  padding: 50px 10px 10px 10px;
+  max-width: 1200px;
+  margin: 50px;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid white;
+  /*border-radius: 5px;*/
+  padding: 0px;
+  text-align: center;
+  box-shadow: 0 1px 2px black; /*x y bluer spread color*/
+  margin-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*margin-right: 50px;*/
+}
+/*Animation*/
+.product-card:hover {
+  transform: translateY(20px);
+  transition-duration: 50ms;
+}
+.product-card img:hover {
+  transform: rotateX(360deg);
+  /*transform: rotateY(45deg);*/
+  transition-duration: 100ms;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card p {
+  font-size: 20px;
+  color: blue;
+  margin-bottom: 30px;
+}
+
+.product-card button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer; /*curseur change to handpointer*/
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-card button:hover {
+  background-color: red;
+  /*Agrandir le button par animation*/
+  transform: scale(1.2);
+  transition-duration: 200ms;
+  /*opacity : transparence*/
+  opacity: 0.3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
